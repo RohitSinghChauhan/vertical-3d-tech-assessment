@@ -1,7 +1,6 @@
 # Canopy Product Configurator
 
-Interactive 3D product configurator (React + TypeScript + R3F) for the Vertical 3D technical assessment. Inspired by [MVP Visuals’ canopy configurator](https://mvpvisuals.com/products/10x10-custom-canopy-tent).
-
+Interactive 3D product configurator (React + TypeScript + R3F) for the Vertical 3D technical assessment.
 **Shopify and pricing are mocked.** Services are structured so real APIs can replace them later without rewriting the UI.
 
 ## Run
@@ -20,8 +19,6 @@ npm run preview
 
 ```text
 Controls / 2D editor
-        ↓
-  Zustand store  ← single source of truth
         ↓
   3D preview · pricing · cart · PDF
 ```
