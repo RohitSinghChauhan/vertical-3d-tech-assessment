@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Sora", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Sora", ui-sans-serif, system-ui, sans-serif;
+
+  --color-app: #eef3f8;
+  --color-surface: #ffffff;
+  --color-surface-muted: #e7edf4;
+  --color-ink: #142033;
+  --color-ink-muted: #5a6b7d;
+  --color-line: #d3dde8;
+  --color-brand: #0f4c81;
+  --color-brand-dark: #0a355a;
+}
+
+@layer base {
+  html,
+  body,
+  #root {
+    min-height: 100%;
+  }
+
+  body {
+    margin: 0;
+    font-family: var(--font-sans);
+    background:
+      radial-gradient(circle at top left, #f7fbff 0%, transparent 40%),
+      var(--color-app);
+    color: var(--color-ink);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  button {
+    cursor: pointer;
+  }
+
+  ::selection {
+    background: color-mix(in oklab, var(--color-brand) 25%, white);
+  }
+}
